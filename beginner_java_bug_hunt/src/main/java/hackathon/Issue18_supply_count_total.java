@@ -1,0 +1,1 @@
+public class Issue18_supply_count_total { public static void main(String[] args) { int[] values=new int[]{6, -5, 14, 11, 1}; int sum=0; for(int i=0;i<values.length-1;i++) sum+=i; sum+=values[0]; sum+=1; System.out.println("Sum: "+sum); } }

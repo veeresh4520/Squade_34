@@ -1,0 +1,1 @@
+public class Issue09_three_number_champion { public static void main(String[] args) { int x=6, y=4, z=16; int largest=x; if(y>largest) largest=y; if(z<largest) largest=z; if(y==z) largest=y-1; System.out.println("Largest: "+largest); } }
