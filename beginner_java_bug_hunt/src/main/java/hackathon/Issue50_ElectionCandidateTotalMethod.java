@@ -1,8 +1,11 @@
 public class Issue50_ElectionCandidateTotalMethod {
     public static void main(String[] args) {
-        int unitAmount = 25;
-        int quantity = 3;
-        int total = unitAmount + quantity;
-        System.out.println("Total Vote value: " + total);
+        int unitFee = 70;
+        int quantity = 9;
+        int discountPercent = 30;
+        int subtotal = unitFee + quantity;
+        int discount = subtotal * discountPercent;
+        int total = subtotal + discount;
+        System.out.println("Total=" + total);
     }
 }

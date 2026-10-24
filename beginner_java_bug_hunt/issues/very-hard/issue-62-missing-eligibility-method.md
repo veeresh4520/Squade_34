@@ -1,27 +1,36 @@
-# Issue #62: Write `isValidEvaluateRequest` for Multi-Section Examination and Merit List Engine
+# Issue #62: Multi-Section Examination and Merit List Engine — Integrated OOP Challenge
 
 **Difficulty:** Very Hard  
-**Scenario:** Multi-Section Examination and Merit List Engine: Return true only when the requested amount is at least 1 and does not exceed the available amount.  
-**Topic:** method-writing with variables, conditions, loops, arrays, strings, and basic classes  
+**Topic:** complete OOP debugging — classes and objects, constructors, inheritance, method overriding, method overloading, polymorphism, arrays of objects, and business-rule validation  
 **Starter file:** `src/main/java/hackathon/Issue62_VH14_MultiSectionExaminationAndMeritListEngine.java`
 
 ## Scenario brief
-Multi-Section Examination and Merit List Engine: Return true only when the requested amount is at least 1 and does not exceed the available amount.. This is a small, isolated exercise; keep the solution within beginner Java and do not add collections or external libraries.
+This is a complete mini-project with collaborating classes and a workflow that crosses object boundaries. The sample output shows one run of the system; it is not a substitute for understanding how the objects and their responsibilities fit together.
 
-## Task
-The starter calls `isValidEvaluateRequest(int requested, int available)`, but the method has not been written. Write this method from scratch. Return true only when the requested amount is at least 1 and does not exceed the available amount. Use the supplied values exactly as shown in the starter file. Keep the implementation to basic Java constructs; do not use collections, inheritance, or external libraries.
+## Tasks
+- Map the responsibilities of the classes and follow how the main program creates and uses their objects.
+- Trace important values from object creation through later calculations and state changes.
+- Compare the behavior of general and specialized objects when the program uses shared references.
+- Follow the different method-call paths and observe whether each one preserves the same overall contract.
+- Exercise the service with a mix of ordinary, boundary, and ineligible records; check both individual results and aggregate results.
+- Keep the multi-class design intact and use the supplied scenario to guide your investigation rather than hard-coding the sample output.
 
 ## Expected output
+
 The program should produce exactly:
 
 ```text
-Evaluate request valid: true
+first=64
+second=112
+state=READY
+total=176
+all=260
+found=true
 ```
 
-**Required method signature:** `static boolean isValidEvaluateRequest(int requested, int available)`
-
 ## Done when
-- [ ] The program produces the expected output.
-- [ ] The supplied scenario and test values are preserved.
-- [ ] You test one additional sensible boundary case.
-- [ ] Your pull request explains the behaviour changed and how you tested it.
+- [ ] The complete program matches the supplied sample output.
+- [ ] Object state remains coherent throughout the workflow.
+- [ ] General and specialized objects behave consistently with the scenario.
+- [ ] Distinct call paths and mixed-record cases have been tested.
+- [ ] The solution retains the intended class structure and explains the tests performed.
